@@ -1,0 +1,5 @@
+gunicorn --bind 0.0.0.0:8082 --worker-connections 20 --workers 2 --worker-class tornado --timeout 6000 rest_service:application
+# --backlog 100 --threads 10 
+#8080 wiki
+#8081 gnew
+#8082 free
